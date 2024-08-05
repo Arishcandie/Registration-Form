@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Form Styles */
+        form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Label Styles */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Input Styles */
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        /* Submit Button Styles */
+        input[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <form action="sam.jsp" method="get">
+        <div>
+            <label for="fn">First Name</label>
+            <input type="text" id="fn" name="uname" placeholder="Enter first name" required>
+            <br>
+            <label for="ln">Last Name</label>
+            <input type="text" id="ln" name="uname" placeholder="Enter last name" required>
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+            <br>
+            <p>Please select your favorite Web language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <hr>
+            <br>
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
+</body>
+</html>
